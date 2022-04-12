@@ -1,0 +1,138 @@
+{
+    "matches": [
+        {
+            "id": "1",
+            "team1": "FCSB",
+            "team2":"Dinamo",
+            "date":"25.03.2022",
+            "time":"22:35",
+            "img1":"http://localhost:4200/assets/images/Fcsb.png",
+            "img2":"http://localhost:4200/assets/images/dinamo.png",
+            "score":"1-0",
+            "odds":"",
+            "category":"Liga1"
+        },
+        {
+            "id": "2",
+            "team1": "Universitatea Craiova",
+            "team2":"FC Arges",
+            "date":"23.02.2022",
+            "time":"21:40",
+            "img1":"http://localhost:4200/assets/images/craiova.png",
+            "img2":"http://localhost:4200/assets/images/arges.jpg",
+            "score":"0-0",
+            "odds":"",
+            "category":"Liga1"
+        },
+        {
+            "id": "3",
+            "team1": "UTA",
+            "team2":"Poli Timisoara",
+            "date":"25.04.2022",
+            "time":"20:30",
+            "img1":"http://localhost:4200/assets/images/uta.png",
+            "img2":"http://localhost:4200/assets/images/poli.png",
+            "score":"",
+            "odds":"",
+            "category":"Liga1"
+        },
+        {
+            "id": "4",
+            "team1": "Steaua",
+            "team2":"Dinamo",
+            "date":"18.02.2022",
+            "time":"19:30",
+            "img1":"http://localhost:4200/assets/images/steaua.png",
+            "img2":"http://localhost:4200/assets/images/dinamo.png",
+            "score":"3-2",
+            "odds":"",
+            "category":"Liga1"
+        },
+        {
+            "id": "5",
+            "team1": "Farul Constanta",
+            "team2":"Clinceni",
+            "date":"20.04.2022",
+            "time":"19:30",
+            "img1":"http://localhost:4200/assets/images/farul.png",
+            "img2":"http://localhost:4200/assets/images/clinceni.png",
+            "score":"",
+            "odds":"",
+            "category":"Liga1"
+        },
+        {
+            "id": "6",
+            "team1": "Voluntari",
+            "team2":"Clinceni",
+            "date":"15.04.2022",
+            "time":"20:00",
+            "img1":"http://localhost:4200/assets/images/voluntari.png",
+            "img2":"http://localhost:4200/assets/images/clinceni.png",
+            "score":"",
+            "odds":"",
+            "category":"Liga1"
+        }
+    ],
+    "categories": [
+        {
+            "id": "1",
+            "categoryName": "Liga1"
+        },
+        {
+            "id": "2",
+            "categoryName": "Liga2"
+        },
+        {
+            "id": "3",
+            "categoryName": "Liga3"
+        },
+        {
+            "id": "4",
+            "categoryName": "EuropaLeague"
+        },
+        {
+            "id": "5",
+            "categoryName": "UEFAChampionsLeague"
+        },
+        {
+            "id":"6",
+            "categoryName":"ConferenceLeague"
+        }
+    ],
+    "profile": [{
+        "name": "Gigel",
+        "surname":"Troaca",
+        "email":"gt@gmail.com",
+        "noTokens":"0"
+    },
+    {
+        "name": "Gigel",
+        "surname":"Troaca",
+        "email":"gt@gmail.com",
+        "noTokens":"0"
+    },
+    {
+        "name": "Gigel",
+        "surname":"Troaca",
+        "email":"gt@gmail.com",
+        "noTokens":"0"
+    },
+    {
+        "name": "Gigel",
+        "surname":"Troaca",
+        "email":"gt@gmail.com",
+        "noTokens":"0"
+    },
+    {
+        "name": "Gigel",
+        "surname":"Troaca",
+        "email":"gt@gmail.com",
+        "noTokens":"0"
+    },
+    {
+        "name": "Gigel",
+        "surname":"Troaca",
+        "email":"gt@gmail.com",
+        "noTokens":"0"
+    }
+]}
