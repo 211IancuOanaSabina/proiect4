@@ -1,8 +1,9 @@
 import { JsonProperty, JsonObject } from 'typescript-json-serializer';
 import { BaseModel } from './BaseModel';
+import { TeamModel } from './TeamModel';
 
 @JsonObject()
-export class TeamModel extends BaseModel {
+export class Team extends BaseModel {
 
   @JsonProperty()
   country: string = "";
