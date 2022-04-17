@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Category } from '../site-layout/category';
+import { Category } from '../components/footer/site-layout/category';
 import { Match } from '../matches/match';
 
 @Injectable({

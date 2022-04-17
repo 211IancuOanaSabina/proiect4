@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MatchesService } from '../../services/matches.service';
-import { Category } from 'src/app/site-layout/category';
+import { Category } from 'src/app/components/footer/site-layout/category';
 import { Match } from '../match';
 
 @Component({

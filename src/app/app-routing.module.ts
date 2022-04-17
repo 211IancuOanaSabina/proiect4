@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RelModule404 } from './404-rel/404-rel.module';
-import { ForgotComponent } from './forgot-rel/forgot/forgot.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { ListBetsComponent } from './oders/list-bets/list-bets.component';
 import { RegisterComponent } from './register-rel/register/register.component';
 import {Page404Component} from "./404-rel/page404/page404.component";
