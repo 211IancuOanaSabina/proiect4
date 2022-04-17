@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListBetsComponent } from 'src/app/oders/list-bets/list-bets.component';
 
 @Component({
   selector: 'app-header',
