@@ -11,12 +11,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let match of matchList">
-            <td ><a href = "http://localhost:4200/matches/">{{ match.team1 }} <img src = "{{ match.img1 }}"></a></td>
-            <td><a routerLink = "matches/match.id">{{ match.team2 }} <img src = "{{ match.img2 }}"></a></td>
-            <td>{{ match.date }}</td>
-            <td>{{ match.time }}</td>
-            <td>{{ match.score }}</td>
+        <tr *ngFor="let bet of Bets">
+            <td ></td>
+            <td><a routerLink = "Bets/bet.id">{{ bet.matchId }} </a></td>
+            <td>{{ bet.option }}</td>
+            <td></td>
+            <td></td>
             <td><div class="btn-group" role="group" aria-label="Basic example">
                 <button id = "groupbtn" type="button" class="btn btn-secondary">1</button>
                 <button id = "groupbtn" type="button" class="btn btn-secondary">X</button>

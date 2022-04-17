@@ -1,138 +1,1408 @@
 {
-    "matches": [
+    "Match": [
         {
-            "id": "1",
-            "team1": "FCSB",
-            "team2":"Dinamo",
-            "date":"25.03.2022",
-            "time":"22:35",
-            "img1":"http://localhost:4200/assets/images/Fcsb.png",
-            "img2":"http://localhost:4200/assets/images/dinamo.png",
-            "score":"1-0",
-            "odds":"",
-            "category":"Liga1"
+            "teamHome": {
+                "country": "England",
+                "founded": 1874,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "id": 66,
+                "name": "Aston Villa"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "id": 710726,
+            "status": "NS",
+            "startDate": "2022-05-19T19:00:00+00:00"
         },
         {
-            "id": "2",
-            "team1": "Universitatea Craiova",
-            "team2":"FC Arges",
-            "date":"23.02.2022",
-            "time":"21:40",
-            "img1":"http://localhost:4200/assets/images/craiova.png",
-            "img2":"http://localhost:4200/assets/images/arges.jpg",
-            "score":"0-0",
-            "odds":"",
-            "category":"Liga1"
+            "teamHome": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "betHome": 2.5,
+            "betDraw": 3.4,
+            "betAway": 2.8,
+            "id": 710727,
+            "status": "NS",
+            "startDate": "2022-04-20T18:45:00+00:00"
         },
         {
-            "id": "3",
-            "team1": "UTA",
-            "team2":"Poli Timisoara",
-            "date":"25.04.2022",
-            "time":"20:30",
-            "img1":"http://localhost:4200/assets/images/uta.png",
-            "img2":"http://localhost:4200/assets/images/poli.png",
-            "score":"",
-            "odds":"",
-            "category":"Liga1"
+            "teamHome": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1902,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/71.png",
+                "id": 71,
+                "name": "Norwich"
+            },
+            "id": 710762,
+            "status": "NS",
+            "startDate": "2022-05-11T18:45:00+00:00"
         },
         {
-            "id": "4",
-            "team1": "Steaua",
-            "team2":"Dinamo",
-            "date":"18.02.2022",
-            "time":"19:30",
-            "img1":"http://localhost:4200/assets/images/steaua.png",
-            "img2":"http://localhost:4200/assets/images/dinamo.png",
-            "score":"3-2",
-            "odds":"",
-            "category":"Liga1"
+            "teamHome": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/47.png",
+                "id": 47,
+                "name": "Tottenham"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1886,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "id": 42,
+                "name": "Arsenal"
+            },
+            "id": 710773,
+            "status": "NS",
+            "startDate": "2022-05-12T18:45:00+00:00"
         },
         {
-            "id": "5",
-            "team1": "Farul Constanta",
-            "team2":"Clinceni",
-            "date":"20.04.2022",
-            "time":"19:30",
-            "img1":"http://localhost:4200/assets/images/farul.png",
-            "img2":"http://localhost:4200/assets/images/clinceni.png",
-            "score":"",
-            "odds":"",
-            "category":"Liga1"
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "id": 49,
+                "name": "Chelsea"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1886,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "id": 42,
+                "name": "Arsenal"
+            },
+            "betHome": 1.92,
+            "betDraw": 3.55,
+            "betAway": 4.05,
+            "id": 710798,
+            "status": "NS",
+            "startDate": "2022-04-20T18:45:00+00:00"
         },
         {
-            "id": "6",
-            "team1": "Voluntari",
-            "team2":"Clinceni",
-            "date":"15.04.2022",
-            "time":"20:00",
-            "img1":"http://localhost:4200/assets/images/voluntari.png",
-            "img2":"http://localhost:4200/assets/images/clinceni.png",
-            "score":"",
-            "odds":"",
-            "category":"Liga1"
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "id": 49,
+                "name": "Chelsea"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "id": 710819,
+            "status": "NS",
+            "startDate": "2022-05-19T19:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1885,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/41.png",
+                "id": 41,
+                "name": "Southampton"
+            },
+            "betHome": 2.95,
+            "betDraw": 3.3,
+            "betAway": 2.45,
+            "id": 710847,
+            "status": "NS",
+            "startDate": "2022-04-21T18:45:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "id": 40,
+                "name": "Liverpool"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/33.png",
+                "id": 33,
+                "name": "Manchester United"
+            },
+            "betHome": 1.45,
+            "betDraw": 4.7,
+            "betAway": 6.75,
+            "id": 710849,
+            "status": "NS",
+            "startDate": "2022-04-19T19:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1880,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/50.png",
+                "id": 50,
+                "name": "Manchester City"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1901,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/51.png",
+                "id": 51,
+                "name": "Brighton"
+            },
+            "betHome": 1.17,
+            "betDraw": 7.1,
+            "betAway": 18,
+            "id": 710850,
+            "status": "NS",
+            "startDate": "2022-04-20T19:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "id": 34,
+                "name": "Newcastle"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "id": 52,
+                "name": "Crystal Palace"
+            },
+            "betHome": 2.5,
+            "betDraw": 3.25,
+            "betAway": 2.95,
+            "id": 710851,
+            "status": "NS",
+            "startDate": "2022-04-20T18:45:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1881,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/38.png",
+                "id": 38,
+                "name": "Watford"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "id": 710854,
+            "status": "NS",
+            "startDate": "2022-05-11T18:45:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1874,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "id": 66,
+                "name": "Aston Villa"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "id": 40,
+                "name": "Liverpool"
+            },
+            "id": 710876,
+            "status": "NS",
+            "startDate": "2022-05-10T19:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "id": 52,
+                "name": "Crystal Palace"
+            },
+            "id": 710877,
+            "status": "NS",
+            "startDate": "2022-05-19T18:45:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1919,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/63.png",
+                "id": 63,
+                "name": "Leeds"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "id": 49,
+                "name": "Chelsea"
+            },
+            "id": 710878,
+            "status": "NS",
+            "startDate": "2022-05-11T18:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "id": 34,
+                "name": "Newcastle"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "betHome": 2.23,
+            "betDraw": 3.5,
+            "betAway": 3.45,
+            "id": 710880,
+            "status": "NS",
+            "startDate": "2022-04-17T13:15:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1895,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/48.png",
+                "id": 48,
+                "name": "West Ham"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "betHome": 1.74,
+            "betDraw": 3.9,
+            "betAway": 5.2,
+            "id": 710884,
+            "status": "NS",
+            "startDate": "2022-04-17T13:15:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1886,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "id": 42,
+                "name": "Arsenal"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/33.png",
+                "id": 33,
+                "name": "Manchester United"
+            },
+            "betHome": 2.2,
+            "betDraw": 3.4,
+            "betAway": 3.3,
+            "id": 710886,
+            "status": "NS",
+            "startDate": "2022-04-23T11:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1889,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/55.png",
+                "id": 55,
+                "name": "Brentford"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/47.png",
+                "id": 47,
+                "name": "Tottenham"
+            },
+            "betHome": 3.9,
+            "betDraw": 3.55,
+            "betAway": 1.95,
+            "id": 710887,
+            "status": "NS",
+            "startDate": "2022-04-23T16:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1901,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/51.png",
+                "id": 51,
+                "name": "Brighton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1885,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/41.png",
+                "id": 41,
+                "name": "Southampton"
+            },
+            "id": 710888,
+            "status": "NS",
+            "startDate": "2022-04-24T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1877,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/39.png",
+                "id": 39,
+                "name": "Wolves"
+            },
+            "id": 710889,
+            "status": "NS",
+            "startDate": "2022-04-24T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "id": 49,
+                "name": "Chelsea"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1895,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/48.png",
+                "id": 48,
+                "name": "West Ham"
+            },
+            "id": 710890,
+            "status": "NS",
+            "startDate": "2022-04-24T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "id": 52,
+                "name": "Crystal Palace"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1919,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/63.png",
+                "id": 63,
+                "name": "Leeds"
+            },
+            "id": 710891,
+            "status": "NS",
+            "startDate": "2022-04-25T19:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1874,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "id": 66,
+                "name": "Aston Villa"
+            },
+            "betHome": 2.67,
+            "betDraw": 3.45,
+            "betAway": 2.58,
+            "id": 710892,
+            "status": "NS",
+            "startDate": "2022-04-23T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "id": 40,
+                "name": "Liverpool"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "id": 710893,
+            "status": "NS",
+            "startDate": "2022-04-24T15:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1880,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/50.png",
+                "id": 50,
+                "name": "Manchester City"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1881,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/38.png",
+                "id": 38,
+                "name": "Watford"
+            },
+            "betHome": 1.11,
+            "betDraw": 10.5,
+            "betAway": 23,
+            "id": 710894,
+            "status": "NS",
+            "startDate": "2022-04-23T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1902,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/71.png",
+                "id": 71,
+                "name": "Norwich"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "id": 34,
+                "name": "Newcastle"
+            },
+            "betHome": 3.7,
+            "betDraw": 3.4,
+            "betAway": 2.05,
+            "id": 710895,
+            "status": "NS",
+            "startDate": "2022-04-23T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1874,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "id": 66,
+                "name": "Aston Villa"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1902,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/71.png",
+                "id": 71,
+                "name": "Norwich"
+            },
+            "id": 710896,
+            "status": "NS",
+            "startDate": "2022-04-30T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "id": 49,
+                "name": "Chelsea"
+            },
+            "id": 710897,
+            "status": "NS",
+            "startDate": "2022-05-01T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1919,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/63.png",
+                "id": 63,
+                "name": "Leeds"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1880,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/50.png",
+                "id": 50,
+                "name": "Manchester City"
+            },
+            "id": 710898,
+            "status": "NS",
+            "startDate": "2022-04-30T16:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/33.png",
+                "id": 33,
+                "name": "Manchester United"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1889,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/55.png",
+                "id": 55,
+                "name": "Brentford"
+            },
+            "id": 710899,
+            "status": "NS",
+            "startDate": "2022-05-02T19:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "id": 34,
+                "name": "Newcastle"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "id": 40,
+                "name": "Liverpool"
+            },
+            "id": 710900,
+            "status": "NS",
+            "startDate": "2022-04-30T11:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1885,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/41.png",
+                "id": 41,
+                "name": "Southampton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "id": 52,
+                "name": "Crystal Palace"
+            },
+            "id": 710901,
+            "status": "NS",
+            "startDate": "2022-04-30T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/47.png",
+                "id": 47,
+                "name": "Tottenham"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "id": 710902,
+            "status": "NS",
+            "startDate": "2022-04-30T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1881,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/38.png",
+                "id": 38,
+                "name": "Watford"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "id": 710903,
+            "status": "NS",
+            "startDate": "2022-04-30T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1895,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/48.png",
+                "id": 48,
+                "name": "West Ham"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1886,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "id": 42,
+                "name": "Arsenal"
+            },
+            "id": 710904,
+            "status": "NS",
+            "startDate": "2022-05-01T15:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1877,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/39.png",
+                "id": 39,
+                "name": "Wolves"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1901,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/51.png",
+                "id": 51,
+                "name": "Brighton"
+            },
+            "id": 710905,
+            "status": "NS",
+            "startDate": "2022-04-30T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1886,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "id": 42,
+                "name": "Arsenal"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1919,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/63.png",
+                "id": 63,
+                "name": "Leeds"
+            },
+            "id": 710906,
+            "status": "NS",
+            "startDate": "2022-05-08T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1889,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/55.png",
+                "id": 55,
+                "name": "Brentford"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1885,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/41.png",
+                "id": 41,
+                "name": "Southampton"
+            },
+            "id": 710907,
+            "status": "NS",
+            "startDate": "2022-05-07T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1901,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/51.png",
+                "id": 51,
+                "name": "Brighton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/33.png",
+                "id": 33,
+                "name": "Manchester United"
+            },
+            "id": 710908,
+            "status": "NS",
+            "startDate": "2022-05-07T16:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1874,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "id": 66,
+                "name": "Aston Villa"
+            },
+            "id": 710909,
+            "status": "NS",
+            "startDate": "2022-05-07T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "id": 49,
+                "name": "Chelsea"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1877,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/39.png",
+                "id": 39,
+                "name": "Wolves"
+            },
+            "id": 710910,
+            "status": "NS",
+            "startDate": "2022-05-07T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "id": 52,
+                "name": "Crystal Palace"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1881,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/38.png",
+                "id": 38,
+                "name": "Watford"
+            },
+            "id": 710911,
+            "status": "NS",
+            "startDate": "2022-05-07T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "id": 710912,
+            "status": "NS",
+            "startDate": "2022-05-07T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "id": 40,
+                "name": "Liverpool"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/47.png",
+                "id": 47,
+                "name": "Tottenham"
+            },
+            "id": 710913,
+            "status": "NS",
+            "startDate": "2022-05-07T18:45:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1880,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/50.png",
+                "id": 50,
+                "name": "Manchester City"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "id": 34,
+                "name": "Newcastle"
+            },
+            "id": 710914,
+            "status": "NS",
+            "startDate": "2022-05-08T15:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1902,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/71.png",
+                "id": 71,
+                "name": "Norwich"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1895,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/48.png",
+                "id": 48,
+                "name": "West Ham"
+            },
+            "id": 710915,
+            "status": "NS",
+            "startDate": "2022-05-07T14:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1874,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "id": 66,
+                "name": "Aston Villa"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "id": 52,
+                "name": "Crystal Palace"
+            },
+            "id": 710916,
+            "status": "NS",
+            "startDate": "2022-05-15T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1889,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/55.png",
+                "id": 55,
+                "name": "Brentford"
+            },
+            "id": 710917,
+            "status": "NS",
+            "startDate": "2022-05-15T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1919,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/63.png",
+                "id": 63,
+                "name": "Leeds"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1901,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/51.png",
+                "id": 51,
+                "name": "Brighton"
+            },
+            "id": 710918,
+            "status": "NS",
+            "startDate": "2022-05-15T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "id": 34,
+                "name": "Newcastle"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1886,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "id": 42,
+                "name": "Arsenal"
+            },
+            "id": 710920,
+            "status": "NS",
+            "startDate": "2022-05-16T19:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1885,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/41.png",
+                "id": 41,
+                "name": "Southampton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "id": 40,
+                "name": "Liverpool"
+            },
+            "id": 710921,
+            "status": "NS",
+            "startDate": "2022-05-15T15:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/47.png",
+                "id": 47,
+                "name": "Tottenham"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "id": 710922,
+            "status": "NS",
+            "startDate": "2022-05-15T11:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1881,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/38.png",
+                "id": 38,
+                "name": "Watford"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "id": 710923,
+            "status": "NS",
+            "startDate": "2022-05-15T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1895,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/48.png",
+                "id": 48,
+                "name": "West Ham"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1880,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/50.png",
+                "id": 50,
+                "name": "Manchester City"
+            },
+            "id": 710924,
+            "status": "NS",
+            "startDate": "2022-05-15T15:30:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1877,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/39.png",
+                "id": 39,
+                "name": "Wolves"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1902,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/71.png",
+                "id": 71,
+                "name": "Norwich"
+            },
+            "id": 710925,
+            "status": "NS",
+            "startDate": "2022-05-15T13:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1886,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/42.png",
+                "id": 42,
+                "name": "Arsenal"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/45.png",
+                "id": 45,
+                "name": "Everton"
+            },
+            "id": 710926,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1889,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/55.png",
+                "id": 55,
+                "name": "Brentford"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1919,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/63.png",
+                "id": 63,
+                "name": "Leeds"
+            },
+            "id": 710927,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1901,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/51.png",
+                "id": 51,
+                "name": "Brighton"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1895,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/48.png",
+                "id": 48,
+                "name": "West Ham"
+            },
+            "id": 710928,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/44.png",
+                "id": 44,
+                "name": "Burnley"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/34.png",
+                "id": 34,
+                "name": "Newcastle"
+            },
+            "id": 710929,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/49.png",
+                "id": 49,
+                "name": "Chelsea"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1881,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/38.png",
+                "id": 38,
+                "name": "Watford"
+            },
+            "id": 710930,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1905,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/52.png",
+                "id": 52,
+                "name": "Crystal Palace"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1878,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/33.png",
+                "id": 33,
+                "name": "Manchester United"
+            },
+            "id": 710931,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1884,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/46.png",
+                "id": 46,
+                "name": "Leicester"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1885,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/41.png",
+                "id": 41,
+                "name": "Southampton"
+            },
+            "id": 710932,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1892,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/40.png",
+                "id": 40,
+                "name": "Liverpool"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1877,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/39.png",
+                "id": 39,
+                "name": "Wolves"
+            },
+            "id": 710933,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1880,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/50.png",
+                "id": 50,
+                "name": "Manchester City"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1874,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/66.png",
+                "id": 66,
+                "name": "Aston Villa"
+            },
+            "id": 710934,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
+        },
+        {
+            "teamHome": {
+                "country": "England",
+                "founded": 1902,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/71.png",
+                "id": 71,
+                "name": "Norwich"
+            },
+            "teamAway": {
+                "country": "England",
+                "founded": 1882,
+                "national": false,
+                "logo": "https://media.api-sports.io/football/teams/47.png",
+                "id": 47,
+                "name": "Tottenham"
+            },
+            "id": 710935,
+            "status": "NS",
+            "startDate": "2022-05-22T15:00:00+00:00"
         }
-    ],
-    "categories": [
-        {
-            "id": "1",
-            "categoryName": "Liga1"
-        },
-        {
-            "id": "2",
-            "categoryName": "Liga2"
-        },
-        {
-            "id": "3",
-            "categoryName": "Liga3"
-        },
-        {
-            "id": "4",
-            "categoryName": "EuropaLeague"
-        },
-        {
-            "id": "5",
-            "categoryName": "UEFAChampionsLeague"
-        },
-        {
-            "id":"6",
-            "categoryName":"ConferenceLeague"
-        }
-    ],
-    "profile": [{
-        "name": "Gigel",
-        "surname":"Troaca",
-        "email":"gt@gmail.com",
-        "noTokens":"0"
-    },
-    {
-        "name": "Gigel",
-        "surname":"Troaca",
-        "email":"gt@gmail.com",
-        "noTokens":"0"
-    },
-    {
-        "name": "Gigel",
-        "surname":"Troaca",
-        "email":"gt@gmail.com",
-        "noTokens":"0"
-    },
-    {
-        "name": "Gigel",
-        "surname":"Troaca",
-        "email":"gt@gmail.com",
-        "noTokens":"0"
-    },
-    {
-        "name": "Gigel",
-        "surname":"Troaca",
-        "email":"gt@gmail.com",
-        "noTokens":"0"
-    },
-    {
-        "name": "Gigel",
-        "surname":"Troaca",
-        "email":"gt@gmail.com",
-        "noTokens":"0"
-    }
-]}
+    ]
+}
