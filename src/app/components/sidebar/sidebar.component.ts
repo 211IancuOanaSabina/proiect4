@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatchesService } from 'src/app/services/matches.service';
-import { Category } from 'src/app/site-layout/category';
+import { Category } from 'src/app/components/footer/site-layout/category';
 import { MatchesComponent } from 'src/app/matches/matches.component';
 
 @Component({

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { OdersModule } from './oders/oders.module';
-import { SiteLayoutModule } from './site-layout/site-layout.module';
+import { SiteLayoutModule } from './components/footer/site-layout/site-layout.module';
 
 @NgModule({
   declarations: [
