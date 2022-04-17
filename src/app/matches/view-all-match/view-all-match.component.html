@@ -3,9 +3,9 @@
 <table class="table">
     <thead class="thead-light">
         <tr>
-            <th>Id match</th>
             <th>Home team</th>
             <th>Away team</th>
+            <th>Date</th>
             <th>Country</th>
             <th></th>
             <th>Instant bet</th>
@@ -14,9 +14,9 @@
     </thead>
     <tbody>
         <tr *ngFor="let match of matchList">
-            <td ><a href = "http://localhost:4200/matches/view-match/{{ match.id }}">{{ match.id }}</a></td>
             <td><a routerLink = "matches/{{ match.teamHome.id}}"> {{ match.teamHome.name}} <img src = "{{ match.teamHome.logo }}"></a></td>
             <td><a routerLink = "matches/{{ match.teamAway.id}}"> {{ match.teamAway.name }}<img src = "{{ match.teamAway.logo }}"></a></td>
+            <td>{{ match.startDate }}</td>
             <td>{{ match.teamHome.country }}</td>
             <td></td>
             <td><div class="btn-group" role="group" aria-label="Basic example">

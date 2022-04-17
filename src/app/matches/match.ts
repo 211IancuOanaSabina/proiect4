@@ -16,5 +16,6 @@ export interface Match {
         name: string
     },
     id:string,
-    name: string  
+    name: string,
+    startDate: Date  
 };
