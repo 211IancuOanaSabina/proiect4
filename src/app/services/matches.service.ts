@@ -14,32 +14,32 @@ export class MatchesService {
    }
 
    createMatch(matchBody:any):Observable<Match>{
-    const baseUrl = "http://localhost:3000/matches";
+    const baseUrl = "http://localhost:3000/Match";
     return this.httpClient.post<Match>(baseUrl, matchBody);
     }
 
     updateMatch(matchId:any, matchBody:any):Observable<Match>{
-      const baseUrl = "http://localhost:3000/matches/" + matchId;
+      const baseUrl = "http://localhost:3000/Match/" + matchId;
       return this.httpClient.put<Match>(baseUrl, matchBody);
     }
 
     viewMatch():Observable<Match[]>{
-      const baseUrl = "http://localhost:3000/matches/" ;
+      const baseUrl = "http://localhost:3000/Match" ;
       return this.httpClient.get<Match[]>(baseUrl);
     }
 
     deleteMatch(matchId:any):Observable<Match>{
-      const baseUrl = "http://localhost:3000/matches/" + matchId;
+      const baseUrl = "http://localhost:3000/Match/" + matchId;
       return this.httpClient.delete<Match>(baseUrl);
     }
 
     searchCategoryMatch(categoryId:any):Observable<Match[]>{
-      const baseUrl = "http://localhost:3000/matches/category = " + categoryId;
+      const baseUrl = "http://localhost:3000/Match/category = " + categoryId;
       return this.httpClient.get<Match[]>(baseUrl);
     }
 
     searchDateMatch(dateParam:any):Observable<Match>{
-      const baseUrl = "http://localhost:3000/matches/date = " + dateParam;
+      const baseUrl = "http://localhost:3000/Match/date = " + dateParam;
       return this.httpClient.get<Match>(baseUrl);
     }
 

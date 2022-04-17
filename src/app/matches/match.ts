@@ -1,5 +1,5 @@
 export interface Match {
-    matchHome: {
+    teamHome: {
         country:string,
         founded:number,
         national: boolean,
@@ -7,12 +7,14 @@ export interface Match {
         id: string,
         name: string
     },
-    matchAway: {
+    teamAway: {
         country:string,
         founded:number,
         national: boolean,
         logo: string,
         id: string,
         name: string
-    }  
+    },
+    id:string,
+    name: string  
 };

@@ -3,21 +3,21 @@
 <table class="table">
     <thead class="thead-light">
         <tr>
-            <th>Team 1</th>
-            <th>Team 2</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Score</th>
+            <th>Id match</th>
+            <th>Home team</th>
+            <th>Away team</th>
+            <th>Country</th>
+            <th></th>
             <th>Instant bet</th>
-            <th>Current bet</th>
+            <th>Current Bet</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let match of matchList">
-            <td ><a href = "http://localhost:4200/matches/"> <img src = ""></a></td>
-            <td><a routerLink = "matches/match.id"> <img src = ""></a></td>
-            <td></td>
-            <td></td>
+            <td ><a href = "http://localhost:4200/matches/view-match/{{ match.id }}">{{ match.id }}</a></td>
+            <td><a routerLink = "matches/{{ match.teamHome.id}}"> {{ match.teamHome.name}} <img src = "{{ match.teamHome.logo }}"></a></td>
+            <td><a routerLink = "matches/{{ match.teamAway.id}}"> {{ match.teamAway.name }}<img src = "{{ match.teamAway.logo }}"></a></td>
+            <td>{{ match.teamHome.country }}</td>
             <td></td>
             <td><div class="btn-group" role="group" aria-label="Basic example">
                 <button id = "groupbtn" type="button" class="btn btn-secondary">1</button>
