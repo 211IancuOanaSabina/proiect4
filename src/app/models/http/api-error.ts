@@ -1,7 +1,7 @@
-import { JsonProperty, Serializable } from 'typescript-json-serializer';
+import {JsonObject, JsonProperty} from 'typescript-json-serializer';
 import { BaseModel } from '../BaseModel';
 
-@Serializable()
+@JsonObject()
 export class ApiError extends BaseModel {
 
   @JsonProperty()
