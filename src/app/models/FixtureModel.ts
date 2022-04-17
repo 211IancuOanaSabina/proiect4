@@ -3,23 +3,20 @@ import { BaseModel } from './BaseModel';
 import { TeamModel } from './TeamModel';
 
 @JsonObject()
-export class Team extends BaseModel {
+export class FixtureModel extends BaseModel {
 
   @JsonProperty()
-  country: string = "";
+  teamHome: TeamModel;
 
   @JsonProperty()
-  founded: Number = 0;
-
-  @JsonProperty()
-  national: Boolean = false;
-
-  @JsonProperty()
-  logo: string = "";
+  teamAway: TeamModel;
 
   @JsonProperty()
   id: Number = 0;
 
   @JsonProperty()
-  name: string = "";
+  status: string = "";
+
+  @JsonProperty()
+  startDate: Date;
 }
