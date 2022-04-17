@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatchesService } from 'src/app/matches/matches.service';
+import { MatchesService } from 'src/app/services/matches.service';
 import { Category } from 'src/app/site-layout/category';
 import { MatchesComponent } from 'src/app/matches/matches.component';
 
@@ -16,11 +16,11 @@ export class SidebarComponent implements OnInit {
   categoryList:Category[];
 
   //categoryList: Category[] = [];
-  
+
   //categoryList = <Category>{ };
 
-  constructor(private matchService: MatchesService) { 
-    
+  constructor(private matchService: MatchesService) {
+
   }
 
   ngOnInit(): void {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MatchesService } from '../matches.service';
+import { MatchesService } from '../../services/matches.service';
 import { Category } from 'src/app/site-layout/category';
 import { Match } from '../match';
 
@@ -14,7 +14,7 @@ export class ViewMatchByCategoryComponent implements OnInit {
   searchCategory:Category[];
   matchList:Match[];
 
-  constructor( private activatedRoute: ActivatedRoute, private matchesService: MatchesService) { 
+  constructor( private activatedRoute: ActivatedRoute, private matchesService: MatchesService) {
     this.activatedRoute.queryParams.subscribe( data => {
       this.searchCategory = data['id'];
 

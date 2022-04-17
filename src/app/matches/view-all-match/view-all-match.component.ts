@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Match } from '../match';
-import { MatchesService } from '../matches.service';
+import { MatchesService } from '../../services/matches.service';
 
 @Component({
   selector: 'app-view-all-match',

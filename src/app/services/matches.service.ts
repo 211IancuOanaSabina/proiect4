@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Category } from '../site-layout/category';
-import { Match } from './match';
+import { Match } from '../matches/match';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ import { Match } from './match';
 export class MatchesService {
 
   constructor(private httpClient: HttpClient) {
-    
+
    }
 
    createMatch(matchBody:any):Observable<Match>{
