@@ -4,6 +4,8 @@ import {Injectable} from '@angular/core';
 import {CurrentBetStateModel} from "./current-bet-state.model";
 import {BetInstance} from "../../models/BetInstance";
 import {CurrentBetActions} from "./current-bet-actions";
+import {JsonSerializer} from "typescript-json-serializer";
+import {BetEntry} from "../../models/BetEntry";
 
 
 @State<CurrentBetStateModel>({
@@ -36,10 +38,18 @@ export class CurrentBetState {
   @ImmutableContext()
   addBetEntry({setState}: StateContext<CurrentBetStateModel>, {payload}: CurrentBetActions.AddBetEntry): void {
     setState((state: CurrentBetStateModel) => {
-      let entries = state.currentBet.betEntries;
+      let currentBet = state.currentBet.clone();
+      let entries = [];
+      currentBet.betEntries.forEach((entry) => {
+        entries.push(entry.clone())
+      });
       entries.push(payload);
-      state.currentBet.betEntries = entries;
-      state.currentBet.multiplier = state.currentBet.multiplier + payload.odds;
+      currentBet.betEntries = entries;
+      currentBet.multiplier = currentBet.multiplier + payload.odds;
+
+      state.currentBet = currentBet;
+      // state.currentBet.betEntries = entries;
+      // state.currentBet.multiplier = state.currentBet.multiplier + payload.odds;
       return state;
     });
   }
