@@ -6,11 +6,8 @@
             <th>Home team</th>
             <th>Away team</th>
             <th>Date</th>
-            <th>Bet Home</th>
-            <th>Bet Draw</th>
-            <th>Bet Away</th>
             <th>Instant bet</th>
-            <th>Current Bet</th>
+            <th>Odds</th>
         </tr>
     </thead>
     <tbody>
@@ -18,9 +15,16 @@
             <td><a routerLink = "matches/{{ match.teamHome.id}}"> {{ match.teamHome.name}} <img src = "{{ match.teamHome.logo }}"></a></td>
             <td><a routerLink = "matches/{{ match.teamAway.id}}"> {{ match.teamAway.name }}<img src = "{{ match.teamAway.logo }}"></a></td>
             <td>{{ match.startDate }}</td>
-            <td>{{ match.betHome }}</td>
-            <td>{{ match.betDraw }}</td>
-            <td>{{ match.betAway }}</td>
+            <td>
+                <tr>
+                    <td>{{ match.betHome }}</td>
+                    <td></td>
+                    <td>{{ match.betDraw }}</td>
+                    <td></td>
+                    <td>{{ match.betAway }}</td>
+                </tr> 
+            </td>
+            
             <td><div class="btn-group" role="group" aria-label="Basic example">
                 <button id = "groupbtn" type="button" class="btn btn-secondary">1</button>
                 <button id = "groupbtn" type="button" class="btn btn-secondary">X</button>
