@@ -22,6 +22,12 @@ export class CurrentBetComponent implements OnInit, OnDestroy {
   constructor(private currentBetService: CurrentBetService) {
   }
 
+  setAmount(){
+    var inputRes = document.getElementsByClassName("form-control")
+    alert(parseInt(inputRes[0]['value']))
+    this.currentBet += inputRes[0]['value']
+  }
+
   ngOnInit(): void {
     this.currentBet$.pipe(takeUntil(this.unsubscribe)).subscribe((c) => {
       this.currentBet = c;

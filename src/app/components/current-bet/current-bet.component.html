@@ -21,6 +21,18 @@
       <td *ngIf="betEntry.winnerAway">Away</td>
       <td *ngIf="!betEntry.winnerAway && !betEntry.winnerHome">Draw</td>
 
+      <td>
+        <form class="form-inline">
+                    
+          <div class="form-outline">
+              <input type="number" id="typeNumber" class="form-control" min="10"/>
+              <label class="form-label" for="typeNumber">Number of tokens</label>
+            </div>
+        
+          <button type="submit" class="btn btn-primary mb-2" (click)="setAmount()">Submit</button>
+        </form>
+  
+      </td>
     </tr>
 
   </ng-container>
