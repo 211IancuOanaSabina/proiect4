@@ -35,11 +35,19 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            ...
               <current-bet></current-bet>
             </div>
             <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <form class="form-inline">
+                    
+                    <div class="form-outline">
+                        <input type="number" id="typeNumber" class="form-control" min="10"/>
+                        <label class="form-label" for="typeNumber">Number of tokens</label>
+                      </div>
+                  
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                  </form>
+            <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
             <!--<button type="button" class="btn btn-primary">Understood</button>-->
             </div>
         </div>
