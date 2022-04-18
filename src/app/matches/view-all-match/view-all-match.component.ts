@@ -21,15 +21,11 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
 
   private unsubscribe = new Subject();
 
-  constructor(private matchService: MatchesService,
-              private fixtureService: FixtureService,
+  constructor(private fixtureService: FixtureService,
               private currentBetService: CurrentBetService) {
   }
 
   ngOnInit(): void {
-    // this.matchService.viewMatch().subscribe(data => {
-    //   this.matchList = data;
-    // })
     this.fixtures$.pipe(takeUntil(this.unsubscribe)).subscribe((f) => {
       this.fixtures = f;
     })
@@ -37,6 +33,11 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
       console.log(response);
     })
 
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe.next('ceva');
+    this.unsubscribe.complete();
   }
 
   public bet1(fixture: Fixture, odds: number) {
@@ -51,9 +52,4 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
     this.currentBetService.bet2(fixture, odds);
   }
 
-
-  ngOnDestroy(): void {
-    this.unsubscribe.next('ceva');
-    this.unsubscribe.complete();
-  }
 }
