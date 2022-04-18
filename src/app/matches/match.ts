@@ -15,6 +15,9 @@ export interface Match {
         id: string,
         name: string
     },
+    betHome:number,
+    betDraw:number,
+    betAway:number
     id:string,
     name: string,
     startDate: Date  
