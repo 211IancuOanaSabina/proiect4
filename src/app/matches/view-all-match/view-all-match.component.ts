@@ -18,7 +18,8 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
   fixtures$: Observable<Fixture[]>
   fixtures: Fixture[];
 
-  matchList: Match[];
+  // matchList: Match[];
+  matchList: Fixture[];
 
   private unsubscribe = new Subject();
 
@@ -27,11 +28,11 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.matchService.viewMatch().subscribe(data => {
-      this.matchList = data;
-    })
+    // this.matchService.viewMatch().subscribe(data => {
+    //   this.matchList = data;
+    // })
     this.fixtures$.pipe(takeUntil(this.unsubscribe)).subscribe((f) => {
-      this.fixtures = f;
+      this.matchList=this.fixtures = f;
     })
     this.fixtureService.getFixtures().subscribe(response => {
       console.log(response);

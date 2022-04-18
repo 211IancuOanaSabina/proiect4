@@ -1,5 +1,5 @@
 <!-- Page content-->
-  
+
 <table class="table">
     <thead class="thead-light">
         <tr>
@@ -14,7 +14,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let match of matchList">
+    <ng-container *ngFor="let match of matchList">
+        <tr *ngIf="match.betAway">
             <td><a routerLink = "matches/{{ match.teamHome.id}}"> {{ match.teamHome.name}} <img src = "{{ match.teamHome.logo }}"></a></td>
             <td><a routerLink = "matches/{{ match.teamAway.id}}"> {{ match.teamAway.name }}<img src = "{{ match.teamAway.logo }}"></a></td>
             <td>{{ match.startDate }}</td>
@@ -28,6 +29,7 @@
                 </div></td>
             <td>placeholder</td>
         </tr>
+    </ng-container>
     </tbody>
 </table>
 
