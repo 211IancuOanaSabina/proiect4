@@ -3,6 +3,9 @@
 body a, h1, h2, h3, button{
     padding-top: 5%;
 }
+.btn-light{
+  min-width: 53px;
+}
 
 #footer{
     background-color: navy !important;
