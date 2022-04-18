@@ -10,6 +10,12 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  setAmount(){
+    var inputRes = document.getElementsByClassName("form-control")
+    console.log(inputRes)
+    
+  }
+
   ngOnInit(): void {
   }
 

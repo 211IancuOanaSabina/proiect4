@@ -1,10 +1,11 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Select} from "@ngxs/store";
 import {Observable, Subject, takeUntil} from "rxjs";
 import {CurrentBetService} from "../../services/current-bet.service";
 import {CurrentBetState} from "../../store/currentBet/current-bet-state";
 import {BetInstance} from "../../models/BetInstance";
 import {BetEntry} from "../../models/BetEntry";
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'current-bet',
