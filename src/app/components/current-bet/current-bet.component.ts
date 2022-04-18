@@ -1,11 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ListBetsComponent} from 'src/app/oders/list-bets/list-bets.component';
 import {Select} from "@ngxs/store";
-import {FixtureState} from "../../store/fixture/fixture-state";
 import {Observable, Subject, takeUntil} from "rxjs";
-import {Fixture} from "../../models/Fixture";
-import {MatchesService} from "../../services/matches.service";
-import {FixtureService} from "../../services/fixture.service";
 import {CurrentBetService} from "../../services/current-bet.service";
 import {CurrentBetState} from "../../store/currentBet/current-bet-state";
 import {BetInstance} from "../../models/BetInstance";
