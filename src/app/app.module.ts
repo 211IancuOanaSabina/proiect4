@@ -7,7 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { OdersModule } from './oders/oders.module';
 import { SiteLayoutModule } from './components/footer/site-layout/site-layout.module';
-import {Page404Component} from "./page404/page404.component";
+import {Page404Component} from "./404-rel/page404/page404.component";
+import {BetCoinStoreModule} from "./store/store.module";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import {Page404Component} from "./page404/page404.component";
     HttpClientModule,
     OdersModule,
     SiteLayoutModule,
-
+    BetCoinStoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
