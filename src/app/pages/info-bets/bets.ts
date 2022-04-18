@@ -1,9 +1,11 @@
 export interface Bets {
-    matchId:string;
+    id:string;
     option:string;
-    odd:string;
-    token:string;
-    value:string;
-    oddToken:string;
+    odd:number;
+    token:number;
+    sumOdds:number;
+    oddToken:number;
     win:boolean;
+    betAddress:string;
+    userAddress: string;
 };

@@ -11,19 +11,15 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let bet of Bets">
+        <ng-container *ngFor="let bet of betList">
             <td ></td>
-            <td><a routerLink = "Bets/bet.id">{{ bet.matchId }} </a></td>
+            <td></td>
             <td>{{ bet.option }}</td>
             <td></td>
             <td></td>
-            <td><div class="btn-group" role="group" aria-label="Basic example">
-                <button id = "groupbtn" type="button" class="btn btn-secondary">1</button>
-                <button id = "groupbtn" type="button" class="btn btn-secondary">X</button>
-                <button id = "groupbtn" type="button" class="btn btn-secondary">2</button>
-                </div></td>
+            
             <td>placeholder</td>
-        </tr>
+        </ng-container>
     </tbody>
 </table>
 

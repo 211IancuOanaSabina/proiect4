@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ListBetsComponent } from 'src/app/oders/list-bets/list-bets.component';
 import { Bets } from '../bets';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-bets-info',
@@ -9,7 +11,13 @@ import { Bets } from '../bets';
 })
 export class BetsInfoComponent implements OnInit {
 
-  matchList : Bets[];
+  createBet(){
+    
+  }
+
+  betList : Bets[];
+
+  
 
   constructor() { }
 

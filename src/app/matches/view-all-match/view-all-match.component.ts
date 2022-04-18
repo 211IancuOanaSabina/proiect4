@@ -18,6 +18,31 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
   fixtures$: Observable<Fixture[]>
   fixtures: Fixture[];
 
+  createBet1(){
+    var btn1 = document.getElementById("groupbtn1")
+
+    if (btn1){
+      alert("buton 1")
+    }
+
+  }
+
+  createBetx(){
+    var btnx = document.getElementById("groupbtnx")
+
+    if (btnx)
+      alert("buton x")
+
+  }
+
+  createBet2(){
+    var btn2 = document.getElementById("groupbtn1")
+
+    if (btn2)
+      alert("buton 2")
+
+  }
+
   // matchList: Match[];
   matchList: Fixture[];
 
