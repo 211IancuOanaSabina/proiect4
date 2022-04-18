@@ -3,6 +3,7 @@ export interface Bets {
     option:string;
     odd:string;
     token:string;
-    sumOdds:string;
+    value:string;
     oddToken:string;
+    win:boolean;
 };
