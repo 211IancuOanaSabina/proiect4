@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FixtureApiService} from "../http/fixutre-api.service";
+import {FixtureApiService} from "./http/fixutre-api.service";
 //import {NgxsOnInit} from "@ngxs/store";
 
 @Component({
