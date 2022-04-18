@@ -10,7 +10,9 @@ import { HttpOptionsType } from '../models/http/http-options-type';
   providedIn: 'root'
 })
 export class HttpClientService {
-  private host: string = 'http://localhost:8000';
+  // private host: string = 'http://localhost:8000';
+  private host: string = 'https://57055bfd-c4d7-48b1-b8bf-6a135f3e79d9.mock.pstmn.io';
+
   constructor(protected http: HttpClient,) { }
 
   get<R>(path: string, params?: Dictionary<string> | Dictionary<string[]>): Observable<R> {

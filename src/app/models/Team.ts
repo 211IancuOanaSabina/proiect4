@@ -1,22 +1,24 @@
 import { JsonProperty, JsonObject } from 'typescript-json-serializer';
 import { BaseModel } from './BaseModel';
-import { TeamModel } from './TeamModel';
 
 @JsonObject()
-export class FixtureModel extends BaseModel {
+export class Team extends BaseModel {
 
   @JsonProperty()
-  teamHome: TeamModel;
+  country: string = "";
 
   @JsonProperty()
-  teamAway: TeamModel;
+  founded: Number = 0;
+
+  @JsonProperty()
+  national: Boolean = false;
+
+  @JsonProperty()
+  logo: string = "";
 
   @JsonProperty()
   id: Number = 0;
 
   @JsonProperty()
-  status: string = "";
-
-  @JsonProperty()
-  startDate: Date;
+  name: string = "";
 }
