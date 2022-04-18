@@ -19,4 +19,13 @@ export class Fixture extends BaseModel {
 
   @JsonProperty()
   startDate: Date;
+
+  @JsonProperty()
+  betHome?: number;
+
+  @JsonProperty()
+  betDraw?: number;
+
+  @JsonProperty()
+  betAway?: number
 }
