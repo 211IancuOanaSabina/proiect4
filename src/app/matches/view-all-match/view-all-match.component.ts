@@ -7,6 +7,7 @@ import {Select} from "@ngxs/store";
 import {FixtureState} from "../../store/fixture/fixture-state";
 import {FixtureApiService} from "../../http/fixture-api.service";
 import {FixtureService} from "../../services/fixture.service";
+import {CurrentBetService} from "../../services/current-bet.service";
 
 @Component({
   selector: 'app-view-all-match',
@@ -18,38 +19,11 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
   fixtures$: Observable<Fixture[]>
   fixtures: Fixture[];
 
-  createBet1(){
-    var btn1 = document.getElementById("groupbtn1")
-
-    if (btn1){
-      alert("buton 1")
-    }
-
-  }
-
-  createBetx(){
-    var btnx = document.getElementById("groupbtnx")
-
-    if (btnx)
-      alert("buton x")
-
-  }
-
-  createBet2(){
-    var btn2 = document.getElementById("groupbtn1")
-
-    if (btn2)
-      alert("buton 2")
-
-  }
-
-  // matchList: Match[];
-  matchList: Fixture[];
-
   private unsubscribe = new Subject();
 
   constructor(private matchService: MatchesService,
-              private fixtureService: FixtureService) {
+              private fixtureService: FixtureService,
+              private currentBetService: CurrentBetService) {
   }
 
   ngOnInit(): void {
@@ -57,13 +31,26 @@ export class ViewAllMatchComponent implements OnInit, OnDestroy {
     //   this.matchList = data;
     // })
     this.fixtures$.pipe(takeUntil(this.unsubscribe)).subscribe((f) => {
-      this.matchList=this.fixtures = f;
+      this.fixtures = f;
     })
     this.fixtureService.getFixtures().subscribe(response => {
       console.log(response);
     })
 
   }
+
+  public bet1(fixture: Fixture, odds: number) {
+    this.currentBetService.bet1(fixture, odds);
+  }
+
+  public betX(fixture: Fixture, odds: number) {
+    this.currentBetService.betX(fixture, odds);
+  }
+
+  public bet2(fixture: Fixture, odds: number) {
+    this.currentBetService.bet2(fixture, odds);
+  }
+
 
   ngOnDestroy(): void {
     this.unsubscribe.next('ceva');
