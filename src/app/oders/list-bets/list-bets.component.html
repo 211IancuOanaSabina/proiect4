@@ -5,7 +5,7 @@
             <div class="col-2">
                 <div class="row">
                     <div class="col-12 py-4">
-                        <ng-container *ngIf="betInstances.indexOf(bet) == 0">Bet Id </ng-container>
+                        <ng-container *ngIf="betInstances.indexOf(bet) == 0"><strong>Bet Id </strong></ng-container>
                 
                     </div>
                     <div class="col-12"><span>{{ bet.id }}</span></div>
@@ -19,7 +19,7 @@
                         <div class="col">
                             <div class="row">
                                 <div class="col-12 py-4">
-                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0">Home Team </ng-container>
+                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0"><strong>Home Team </strong></ng-container>
                             
                                 </div>
                                 <div class="col-12"><p>{{ betEntry.fixture.teamHome.name }}</p></div>
@@ -29,7 +29,7 @@
                         <div class="col">
                             <div class="row">
                                 <div class="col-12 py-4">
-                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0">Away Team </ng-container>
+                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0"><strong>Away Team </strong></ng-container>
                             
                                 </div>
                                 <div class="col-12"><p>{{ betEntry.fixture.teamAway.name }}</p></div>
@@ -38,7 +38,7 @@
                         <div class="col">
                             <div class="row">
                                 <div class="col-12 py-4">
-                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0">Odds </ng-container>
+                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0"><strong>Odds </strong></ng-container>
                             
                                 </div>
                                 <div class="col-12"><p>{{ betEntry.odds }}</p></div>
@@ -49,10 +49,10 @@
                 </ng-container>
             </div>
 
-            <div class="col-3">
+            <div class="col-2">
                 <div class="row">
                     <div class="col-12 py-4">
-                        <ng-container *ngIf="betInstances.indexOf(bet) == 0">Status </ng-container>
+                        <ng-container *ngIf="betInstances.indexOf(bet) == 0"><strong>Status</strong></ng-container>
                 
                     </div>
                     <div class="col-12"><span>{{ bet.status }}</span></div>
@@ -62,10 +62,10 @@
             <div class="col">
                 <div class="row">
                     <div class="col-12 py-4">
-                        <ng-container *ngIf="betInstances.indexOf(bet) == 0">Claim</ng-container>
+                        <ng-container *ngIf="betInstances.indexOf(bet) == 0"><strong>Claim</strong></ng-container>
                 
                     </div>
-                    <div class="col-12"><button class="btn btn-primary" *ngIf="bet.status  == 'claimable'">Claim</button></div>
+                    <div class="col-12"><button class="btn btn-success" *ngIf="bet.status  == 'claimable'">Claim</button></div>
                 </div>
                 
             </div>
