@@ -1,9 +1,9 @@
 <table class="table">
   <thead class="thead-light">
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Home</th>
+    <th>Away</th>
+    <th>Odds</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,29 +16,27 @@
       <td>{{ betEntry.fixture.teamHome.name }}</td>
       <td>{{ betEntry.fixture.teamAway.name }}</td>
       <td>{{ betEntry.odds }}</td>
-      <td>{{ currentBet.multiplier * currentBet.amount}}</td>
+      <!--      <td>{{ currentBet.multiplier * currentBet.amount}}</td>-->
       <td *ngIf="betEntry.winnerHome"> Home</td>
       <td *ngIf="betEntry.winnerAway">Away</td>
       <td *ngIf="!betEntry.winnerAway && !betEntry.winnerHome">Draw</td>
-
-      <td>
-        
-  
-      </td>
-      <td><button><i class="fa-solid fa-trash"></i></button></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><i class="fa fa-trash text-danger" (click)="removeBet(betEntry)"></i></td>
     </tr>
   </ng-container>
   </tbody>
 </table>
 
-<form class="form-inline">
-                    
-  <div class="form-outline">
-      <input type="number" id="typeNumber" class="form-control" min="10"/>
-      <label class="form-label" for="typeNumber">Number of tokens</label>
-    </div>
 
-  
-</form>
-<button type="submit" class="btn btn-primary mb-2" (click)="setAmount()">Submit</button>
+<div class="form-outline">
+  <label class="form-label" for="typeNumber">Number of tokens</label>
+  <input type="number" id="typeNumber" class="form-control" min="1" [(ngModel)]="amount">
+
+  {{amount}}x{{currentBet.multiplier}}={{(currentBet.multiplier * amount).toFixed(2)}}
+</div>
+
+
+<button type="submit" class="btn btn-primary mb-2" (click)="submitBet()">Submit</button>
 

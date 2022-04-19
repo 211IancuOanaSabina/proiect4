@@ -5,7 +5,7 @@ import {CurrentBetService} from "../../services/current-bet.service";
 import {CurrentBetState} from "../../store/currentBet/current-bet-state";
 import {BetInstance} from "../../models/BetInstance";
 import {BetEntry} from "../../models/BetEntry";
-import { HeaderComponent } from '../header/header.component';
+import {HeaderComponent} from '../header/header.component';
 
 @Component({
   selector: 'current-bet',
@@ -16,6 +16,8 @@ export class CurrentBetComponent implements OnInit, OnDestroy {
   @Select(CurrentBetState.getCurrentBet)
   currentBet$: Observable<BetInstance>
   currentBet: BetInstance;
+
+  amount: number = 1;
 
   private unsubscribe = new Subject();
 
@@ -40,16 +42,8 @@ export class CurrentBetComponent implements OnInit, OnDestroy {
     this.currentBetService.removeBetEntry(betEntry)
   }
 
-  setAmount(){
-    var inputRes = document.getElementsByClassName("form-control")
+  submitBet() {
 
-    var sum = 0;
-
-    for(var i = 0; i< inputRes.length; i++){
-      sum = parseInt(inputRes[i]['value']) + sum
-      this.currentBet.amount = sum
-    }
-
-    console.log(this.currentBet)
   }
+
 }
