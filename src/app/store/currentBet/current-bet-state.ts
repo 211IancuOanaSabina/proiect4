@@ -48,8 +48,7 @@ export class CurrentBetState {
       currentBet.multiplier = currentBet.multiplier + payload.odds;
 
       state.currentBet = currentBet;
-      // state.currentBet.betEntries = entries;
-      // state.currentBet.multiplier = state.currentBet.multiplier + payload.odds;
+
       return state;
     });
   }
@@ -58,15 +57,45 @@ export class CurrentBetState {
   @ImmutableContext()
   removeBetEntry({setState}: StateContext<CurrentBetStateModel>, {payload}: CurrentBetActions.RemoveBetEntry): void {
     setState((state: CurrentBetStateModel) => {
-      let entries = state.currentBet.betEntries;
-      entries.filter((entry) => {
-        return entry !== payload;
-      })
-      state.currentBet.betEntries = entries;
-      state.currentBet.multiplier = state.currentBet.multiplier - payload.odds;
+      let currentBet = state.currentBet.clone();
+      let entries = [];
+      currentBet.betEntries.forEach((entry) => {
+        if (entry != payload) {
+          entries.push(entry.clone())
+        }
+      });
+      currentBet.betEntries = entries;
+      currentBet.multiplier = currentBet.multiplier - payload.odds;
+
+      state.currentBet = currentBet;
 
       return state;
     });
   }
+
+  @Action(CurrentBetActions.AddUserAddress)
+  @ImmutableContext()
+  addUserAddress({setState}: StateContext<CurrentBetStateModel>, {payload}: CurrentBetActions.AddUserAddress): void {
+    setState((state: CurrentBetStateModel) => {
+      let currentBet = state.currentBet.clone();
+      currentBet.userAddress = payload;
+      state.currentBet = currentBet;
+
+      return state;
+    });
+  }
+
+  @Action(CurrentBetActions.AddContractAddress)
+  @ImmutableContext()
+  addContractAddress({setState}: StateContext<CurrentBetStateModel>, {payload}: CurrentBetActions.AddContractAddress): void {
+    setState((state: CurrentBetStateModel) => {
+      let currentBet = state.currentBet.clone();
+      currentBet.contractAddress = payload;
+      state.currentBet = currentBet;
+
+      return state;
+    });
+  }
+
 
 }

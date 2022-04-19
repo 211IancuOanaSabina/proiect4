@@ -13,6 +13,8 @@ export class HeaderComponent implements OnInit {
 
   constructor(public web3ModalService: Web3ModalService ) { }
 
+  
+
   ngOnInit(): void {
     this.login();
 
