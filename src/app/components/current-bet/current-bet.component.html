@@ -16,7 +16,7 @@
       <td>{{ betEntry.fixture.teamHome.name }}</td>
       <td>{{ betEntry.fixture.teamAway.name }}</td>
       <td>{{ betEntry.odds }}</td>
-      <td>{{ betEntry.odds * currentBet.amount}}</td>
+      <td>{{ currentBet.multiplier * currentBet.amount}}</td>
       <td *ngIf="betEntry.winnerHome"> Home</td>
       <td *ngIf="betEntry.winnerAway">Away</td>
       <td *ngIf="!betEntry.winnerAway && !betEntry.winnerHome">Draw</td>
