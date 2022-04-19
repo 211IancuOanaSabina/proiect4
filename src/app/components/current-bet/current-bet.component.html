@@ -31,10 +31,10 @@
 
 
 <div class="form-outline">
-  <label class="form-label" for="typeNumber">Number of tokens</label>
+  <label class="form-label" for="typeNumber">Number of tokens invested</label>
   <input type="number" id="typeNumber" class="form-control" min="1" [(ngModel)]="amount">
 
-  {{amount}}x{{currentBet.multiplier.toFixed(2)}}={{(currentBet.multiplier * amount).toFixed(2)}}
+  <label class="form-label" for="typeNumber">Number of tokens wins: {{amount}}x{{currentBet.multiplier.toFixed(2)}}={{(currentBet.multiplier * amount).toFixed(2)}}</label>
 </div>
 
 
