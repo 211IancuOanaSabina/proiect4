@@ -1,1 +1,99 @@
-<p>list-bets works!</p>
+<div class="container">
+
+    <ng-container *ngFor="let bet of betInstances">
+        <div class="row pb-5">
+            <div class="col-2">
+                <div class="row">
+                    <div class="col-12 py-4">
+                        <ng-container *ngIf="betInstances.indexOf(bet) == 0">Bet Id </ng-container>
+                
+                    </div>
+                    <div class="col-12"><span>{{ bet.id }}</span></div>
+                </div>
+            </div>
+            
+            <div class="col-7">
+                <ng-container *ngFor="let betEntry of bet['betEntries']">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12 py-4">
+                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0">Home Team </ng-container>
+                            
+                                </div>
+                                <div class="col-12"><p>{{ betEntry.fixture.teamHome.name }}</p></div>
+                            </div>
+                            
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12 py-4">
+                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0">Away Team </ng-container>
+                            
+                                </div>
+                                <div class="col-12"><p>{{ betEntry.fixture.teamAway.name }}</p></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12 py-4">
+                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0">Odds </ng-container>
+                            
+                                </div>
+                                <div class="col-12"><p>{{ betEntry.odds }}</p></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-12 py-4">
+                        <ng-container *ngIf="betInstances.indexOf(bet) == 0">Status </ng-container>
+                
+                    </div>
+                    <div class="col-12"><span>{{ bet.status }}</span></div>
+                </div>
+            </div>
+
+        </div>
+    </ng-container>
+</div>
+
+
+<!-- Page content-->
+
+<!--<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>Bet id</th>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Odds</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let bet of betInstances">
+        <tr >
+            <td>{{ bet.id }}</td>
+            <ng-container *ngFor="let betEntry of bet['betEntries']">
+                
+                <tr>
+                    <td>{{  betEntry.fixture.teamHome.name }}</td>
+                    <td>{{  betEntry.fixture.teamAway.name }}</td>
+                    <td>{{ betEntry.odds }}</td>
+                    <td *ngIf="betEntry.winnerAway">Away</td>
+                    <td *ngIf="betEntry.winnerHome">Home</td>
+                    <td *ngIf="!betEntry.winnerAway && !betEntry.winnerHome">Draw</td>
+                </tr>
+            </ng-container>
+            <td>{{ bet.status }}</td>
+
+        </tr>
+    </ng-container>
+    </tbody>
+</table>-->
