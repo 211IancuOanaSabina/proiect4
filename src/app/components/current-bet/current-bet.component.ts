@@ -27,8 +27,6 @@ export class CurrentBetComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.currentBet$.pipe(takeUntil(this.unsubscribe)).subscribe((c) => {
       this.currentBet = c;
-
-      console.log(this.currentBet)
     })
 
   }
@@ -43,7 +41,9 @@ export class CurrentBetComponent implements OnInit, OnDestroy {
   }
 
   submitBet() {
-
+    let betInstance = this.currentBet.clone();
+    betInstance.amount = this.amount;
+    this.currentBetService.createBetInstance(betInstance).subscribe();
   }
 
 }

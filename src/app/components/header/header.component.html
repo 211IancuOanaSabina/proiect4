@@ -6,10 +6,10 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost:4200/matches/">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="http://localhost:4200/login">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="http://localhost:4200/bets-info">Bets Info</a></li>
-                <li class="nav-item"><a class="nav-link" href="http://localhost:4200/bets">Your bets</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" [routerLink]="['/matches']" href="http://localhost:4200/matches/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/login']" href="http://localhost:4200/login">Login</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/bets-info']"  href="http://localhost:4200/bets-info">Bets Info</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="['/bets']"  href="http://localhost:4200/bets">Your bets</a></li>
             </ul>
             <form class="d-flex">
                 <button class="btn btn-outline-dark" type="submit">
@@ -38,7 +38,7 @@
               <current-bet></current-bet>
             </div>
             <div class="modal-footer">
-                
+
             </div>
         </div>
         </div>

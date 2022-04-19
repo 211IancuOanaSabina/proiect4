@@ -6,6 +6,7 @@ import { FooterComponent } from '../footer.component';
 import { SidebarComponent } from '../../sidebar/sidebar.component';
 import {CurrentBetComponent} from "../../current-bet/current-bet.component";
 import {FormsModule} from "@angular/forms";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -14,10 +15,11 @@ import {FormsModule} from "@angular/forms";
     SidebarComponent,
     CurrentBetComponent
   ],
-    imports: [
-        CommonModule,
-        FormsModule,
-    ],
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterModule,
+  ],
   exports: [
     HeaderComponent,
     FooterComponent,

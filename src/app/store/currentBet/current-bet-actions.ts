@@ -20,4 +20,16 @@ export namespace CurrentBetActions {
     constructor(public payload: BetEntry) {}
   }
 
+  export class AddUserAddress {
+    static readonly type = '[CurrentBet] Add userAddress';
+
+    constructor(public payload: string) {}
+  }
+
+  export class AddContractAddress {
+    static readonly type = '[CurrentBet] Add contractAddress';
+
+    constructor(public payload: string) {}
+  }
+
 }
