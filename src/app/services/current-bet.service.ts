@@ -3,13 +3,17 @@ import {Store} from "@ngxs/store";
 import {Fixture} from "../models/Fixture";
 import {CurrentBetActions} from "../store/currentBet/current-bet-actions";
 import {BetEntry} from "../models/BetEntry";
+import {CurrentBetApiService} from "../http/current-bet-api.service";
+import {BetInstance} from "../models/BetInstance";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class CurrentBetService {
 
-  constructor(protected store: Store) {
+  constructor(protected store: Store,
+              protected api: CurrentBetApiService) {
   }
 
   public bet1(fixture: Fixture, odds: number) {
@@ -44,6 +48,10 @@ export class CurrentBetService {
 
   public addContractAddress(address: string) {
     this.store.dispatch(new CurrentBetActions.AddContractAddress(address));
+  }
+
+  public createBetInstance(betInstance: BetInstance): Observable<any> {
+    return this.api.createBetInstance(betInstance);
   }
 
 }
