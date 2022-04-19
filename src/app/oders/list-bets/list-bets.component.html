@@ -45,6 +45,16 @@
                             </div>
                             
                         </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12 py-4">
+                                    <ng-container *ngIf="betInstances.indexOf(bet) == 0 && bet['betEntries'].indexOf(betEntry) == 0">Claim</ng-container>
+                            
+                                </div>
+                                <div class="col-12"><button class="btn btn-primary" *ngIf="bet.status  !== 'pending'">Claim</button></div>
+                            </div>
+                            
+                        </div>
                     </div>
                 </ng-container>
             </div>
