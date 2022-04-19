@@ -15,22 +15,14 @@
     <tr>
       <td>{{ betEntry.fixture.teamHome.name }}</td>
       <td>{{ betEntry.fixture.teamAway.name }}</td>
-      <td>{{ currentBet.multiplier }}</td>
-      <td>{{ currentBet.multiplier * currentBet.amount}}</td>
+      <td>{{ betEntry.odds }}</td>
+      <td>{{ betEntry.odds * currentBet.amount}}</td>
       <td *ngIf="betEntry.winnerHome"> Home</td>
       <td *ngIf="betEntry.winnerAway">Away</td>
       <td *ngIf="!betEntry.winnerAway && !betEntry.winnerHome">Draw</td>
 
       <td>
-        <form class="form-inline">
-                    
-          <div class="form-outline">
-              <input type="number" id="typeNumber" class="form-control" min="10"/>
-              <label class="form-label" for="typeNumber">Number of tokens</label>
-            </div>
         
-          
-        </form>
   
       </td>
       <td><button><i class="fa-solid fa-trash"></i></button></td>
@@ -39,5 +31,14 @@
   </tbody>
 </table>
 
+<form class="form-inline">
+                    
+  <div class="form-outline">
+      <input type="number" id="typeNumber" class="form-control" min="10"/>
+      <label class="form-label" for="typeNumber">Number of tokens</label>
+    </div>
+
+  
+</form>
 <button type="submit" class="btn btn-primary mb-2" (click)="setAmount()">Submit</button>
 

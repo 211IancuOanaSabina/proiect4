@@ -42,16 +42,14 @@ export class CurrentBetComponent implements OnInit, OnDestroy {
 
   setAmount(){
     var inputRes = document.getElementsByClassName("form-control")
-    alert(parseInt(inputRes[0]['value']))
 
     var sum = 0;
 
     for(var i = 0; i< inputRes.length; i++){
       sum = parseInt(inputRes[i]['value']) + sum
-
-
       this.currentBet.amount = sum
-      console.log(this.currentBet)
     }
+
+    console.log(this.currentBet)
   }
 }
