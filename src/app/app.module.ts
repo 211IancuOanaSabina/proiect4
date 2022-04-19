@@ -34,8 +34,7 @@ import {Web3ModalModule, Web3ModalService} from '@mindsorg/web3modal-angular';
         providerOptions: {
           injected: {
             display: {
-              logo: "data:image/gif;base64,INSERT_BASE64_STRING",
-              name: "Injected",
+              name: "Metamask",
               description: "Connect with the provider in your Browser"
             },
             package: null
