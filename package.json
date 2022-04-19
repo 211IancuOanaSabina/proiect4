@@ -18,6 +18,8 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@metamask/detect-provider": "^1.2.0",
+    "@mindsorg/web3modal-angular": "^1.7.1",
     "@ngxs-labs/immer-adapter": "^3.0.5",
     "@ngxs/devtools-plugin": "^3.7.3",
     "@ngxs/logger-plugin": "^3.7.3",
@@ -30,6 +32,7 @@
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "typescript-json-serializer": "^4.1.1",
+    "web3": "^1.7.3",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
