@@ -26,4 +26,7 @@ export class BetInstance extends BaseModel {
   @JsonProperty()
   contractAddress: string = "";
 
+  @JsonProperty()
+  userAddress: string = "";
+
 }
