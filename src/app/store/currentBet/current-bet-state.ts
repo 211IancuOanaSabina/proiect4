@@ -73,4 +73,29 @@ export class CurrentBetState {
     });
   }
 
+  @Action(CurrentBetActions.AddUserAddress)
+  @ImmutableContext()
+  addUserAddress({setState}: StateContext<CurrentBetStateModel>, {payload}: CurrentBetActions.AddUserAddress): void {
+    setState((state: CurrentBetStateModel) => {
+      let currentBet = state.currentBet.clone();
+      currentBet.userAddress = payload;
+      state.currentBet = currentBet;
+
+      return state;
+    });
+  }
+
+  @Action(CurrentBetActions.AddContractAddress)
+  @ImmutableContext()
+  addContractAddress({setState}: StateContext<CurrentBetStateModel>, {payload}: CurrentBetActions.AddContractAddress): void {
+    setState((state: CurrentBetStateModel) => {
+      let currentBet = state.currentBet.clone();
+      currentBet.contractAddress = payload;
+      state.currentBet = currentBet;
+
+      return state;
+    });
+  }
+
+
 }

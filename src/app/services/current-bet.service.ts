@@ -38,4 +38,12 @@ export class CurrentBetService {
     this.store.dispatch(new CurrentBetActions.RemoveBetEntry(betEntry));
   }
 
+  public addUserAddress(address: string) {
+    this.store.dispatch(new CurrentBetActions.AddUserAddress(address));
+  }
+
+  public addContractAddress(address: string) {
+    this.store.dispatch(new CurrentBetActions.AddContractAddress(address));
+  }
+
 }
