@@ -6,6 +6,7 @@ import { FooterComponent } from '../footer.component';
 import { SidebarComponent } from '../../sidebar/sidebar.component';
 import {AppModule} from "../../../app.module";
 import {CurrentBetComponent} from "../../current-bet/current-bet.component";
+import {Web3ModalModule} from "@mindsorg/web3modal-angular";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {CurrentBetComponent} from "../../current-bet/current-bet.component";
   ],
     imports: [
         CommonModule,
+        Web3ModalModule,
     ],
   exports: [
     HeaderComponent,
