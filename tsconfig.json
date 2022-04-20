@@ -24,7 +24,8 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "resolveJsonModule": true, // to resolve json files
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

@@ -3,6 +3,7 @@ import {Web3ModalService} from '@mindsorg/web3modal-angular';
 import {Web3Provider} from "@ethersproject/providers";
 import {Store} from "@ngxs/store";
 import {CurrentBetActions} from "../../store/currentBet/current-bet-actions";
+import {BetCoinService} from "../../services/bet-coin.service";
 
 
 @Component({
@@ -12,7 +13,7 @@ import {CurrentBetActions} from "../../store/currentBet/current-bet-actions";
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public web3ModalService: Web3ModalService,
+  constructor(public betCoinService: BetCoinService,
               public store: Store) {
   }
 
@@ -20,13 +21,8 @@ export class HeaderComponent implements OnInit {
   }
 
   async login() {
-    const provider = await this.web3ModalService.open() as any;
 
-    const web3provider = new Web3Provider(provider)
-    let accounts = await web3provider.listAccounts();
-    let userAddress = accounts[0];
-    this.store.dispatch(new CurrentBetActions.AddUserAddress(userAddress))
-
+    return await this.betCoinService.login();
   }
 
 }
