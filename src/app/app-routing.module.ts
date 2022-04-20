@@ -4,6 +4,7 @@ import {LoginComponent} from './pages/login/login.component';
 import {ListBetsComponent} from './oders/list-bets/list-bets.component';
 import {BetsInfoComponent} from './pages/bets-info/bets-info.component';
 import {Page404Component} from "./page404/page404.component";
+import {NeedFundsBetsComponent} from "./pages/need-funds-bets/need-funds-bets.component";
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'bets', component: ListBetsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'bets-info', component: BetsInfoComponent},
+  {path: 'need-funds', component: NeedFundsBetsComponent},
   {path: '', redirectTo: '/matches', pathMatch: 'full'},
   {path: '**', component: Page404Component},
 ];

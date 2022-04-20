@@ -9,11 +9,13 @@ import {SiteLayoutModule} from './components/footer/site-layout/site-layout.modu
 import {Page404Component} from "./page404/page404.component";
 import {BetCoinStoreModule} from "./store/store.module";
 import {Web3ModalModule, Web3ModalService} from '@mindsorg/web3modal-angular';
+import {NeedFundsBetsComponent} from "./pages/need-funds-bets/need-funds-bets.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     Page404Component,
+    NeedFundsBetsComponent
   ],
   imports: [
     BrowserModule,

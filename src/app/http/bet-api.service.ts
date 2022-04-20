@@ -22,4 +22,23 @@ export class BetApiService {
       );
   }
 
+  getNeedFundBets(): Observable<any> {
+
+    return this.http.get(`/api/bet-instance/need-funds`,)
+      .pipe(
+        tap(console.log),
+        map((res: any) => res.data),
+        map((res: any) => res.items),
+      );
+  }
+
+  fundBet(id: number): Observable<any> {
+
+    return this.http.get(`/api/bet-instance/fund/${id}`)
+      .pipe(
+        tap(console.log),
+        map((res: any) => res.data),
+      );
+  }
+
 }
