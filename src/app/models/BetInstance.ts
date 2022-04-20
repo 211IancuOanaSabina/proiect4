@@ -6,7 +6,7 @@ import {BetEntry} from "./BetEntry";
 export class BetInstance extends BaseModel {
 
   @JsonProperty()
-  id: Number = 0;
+  id: number = 0;
 
   @JsonProperty()
   status: string = "";
@@ -28,5 +28,8 @@ export class BetInstance extends BaseModel {
 
   @JsonProperty()
   userAddress: string = "";
+
+  @JsonProperty()
+  funded: boolean;
 
 }

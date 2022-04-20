@@ -65,7 +65,7 @@
                         <ng-container *ngIf="betInstances.indexOf(bet) == 0"><strong>Claim</strong></ng-container>
 
                     </div>
-                    <div class="col-12"><button class="btn btn-success" *ngIf="bet.status  == 'claimable'">Claim</button></div>
+                    <div class="col-12"><button class="btn btn-success" *ngIf="!bet.funded" (click)="fund(bet.id)">Fund</button></div>
                 </div>
 
             </div>
