@@ -4,6 +4,8 @@ import {Web3ModalService} from "@mindsorg/web3modal-angular";
 import {Web3Provider} from "@ethersproject/providers";
 import {CurrentBetActions} from "../store/currentBet/current-bet-actions";
 import BetFactory from '../contracts/betfactory.sol/BetFactory.json';
+import BetContract from '../contracts/bet.sol/Bet.json';
+import BetCoin from '../contracts/betcoin.sol/BetCoin.json';
 import {Contract} from "@ethersproject/contracts";
 
 
@@ -11,8 +13,8 @@ import {Contract} from "@ethersproject/contracts";
   providedIn: 'root'
 })
 export class BetCoinService {
-  private betFactoryAddress = "0x591b594f01ae53BFf6Fb44C5dA0a16a62c2f3f6c";
-  private tokenAddress = "0x3200B3E272007a8685B0C66c84eb4c03e7E29ed1";
+  private betFactoryAddress = "0x239745750870104a7EC6126c89156D773088286c";
+  private tokenAddress = "0x00BBf6C4102a769076EC39ab0535c5635f2fDD6F";
   private betContractAddress;
   public web3provider: Web3Provider = null;
   public userAddress: string;
@@ -35,7 +37,7 @@ export class BetCoinService {
     console.log(this.betFactoryContract);
     console.log(this.signer);
 
-    this.betContractAddress = await this.betFactoryContract.newBet(1, 2, this.tokenAddress);
+    
     console.log(this.betContractAddress);
 
   }
@@ -44,5 +46,21 @@ export class BetCoinService {
   //   this.betContractAddress = await this.betFactoryContract.newBet();
   //   console.log(this.betContractAddress);
   // }
+
+  async newBet(odd: number, id: number, bet_amount: number ){
+
+    this.betContractAddress = await this.betFactoryContract.newBet(1, 2, this.tokenAddress);
+    let newBetContract = new Contract(this.betContractAddress, BetContract.abi, this.signer);
+    await newBetContract['bet'](2);
+    // console.log("true:",betPlaced);
+
+  }
+
+  async faucet(){
+
+    let tokenContract = new Contract(this.tokenAddress, BetCoin.abi, this.signer)
+    tokenContract['faucet'](this.userAddress);
+
+  }
 
 }

@@ -25,4 +25,12 @@ export class HeaderComponent implements OnInit {
     return await this.betCoinService.login();
   }
 
+  async betTest(){
+    return await this.betCoinService.newBet(1,1,2);
+  }
+
+  async faucet(){
+    return await this.betCoinService.faucet;
+  }
+
 }
